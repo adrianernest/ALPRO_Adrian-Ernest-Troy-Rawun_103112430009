@@ -1,22 +1,13 @@
 package main
 
-import (
-        "fmt"
-        "math"
-)
+import "fmt"
 
-func main() {
-        var fx float64
+func main(){
+        var Rupiah int
+        fmt.Scan(&Rupiah)
+        hasil :=   Rupiah / 15000
 
-        fmt.Print("Masukkan nilai f(x): ")
-        fmt.Scan(&fx)
+        fmt.Println("hasil konversi dari Rupiah ke Dolar", hasil)
 
-        // Mengisolasi x: x^2/2 = fx - 5
-        xKuadrat := 2 * (fx - 5)
 
-        // Menghitung akar kuadrat (nilai mutlak x)
-        nilaiMutlakX := math.Sqrt(xKuadrat)
-
-        // Menampilkan hasil
-        fmt.Printf("Nilai x adalah: %.2f atau %.2f\n", nilaiMutlakX, -nilaiMutlakX)
 }
