@@ -16,17 +16,18 @@ func main() {
 	fmt.Print("Masukkan kode menu (1-5): ")
 	fmt.Scan(&choice)
 
-	if choice == 1 {
+	switch choice {
+	case 1:
 		fmt.Println("Anda memilih Burger - Rp25,000")
-	} else if choice == 2 {
+	case 2:
 		fmt.Println("Anda memilih Fried Chicken - Rp20,000")
-	} else if choice == 3 {
+	case 3:
 		fmt.Println("Anda memilih French Fries - Rp15,000")
-	} else if choice == 4 {
+	case 4:
 		fmt.Println("Anda memilih Soft Drink - Rp10,000")
-	} else if choice == 5 {
+	case 5:
 		fmt.Println("Anda memilih Coffee - Rp15,000")
-	} else {
+	default:
 		fmt.Println("Kode menu tidak valid")
 	}
 }
